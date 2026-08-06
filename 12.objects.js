@@ -1,4 +1,4 @@
-const car = {
+let car = {
   brand: "Toyota",
   model: "Land Cruiser",
   color: "Black",
