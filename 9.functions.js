@@ -54,3 +54,32 @@ console.log(greeting("John"));
 )();
 
 
+// Default Parameter
+function divide(a,b = 1){
+  return a / b
+}
+let res = divide(2)
+console.log(res)
+
+// Rest Parameter
+function multiply(a,b,...rest){
+ let result = 1
+ for(let num of rest){
+  result *= num
+ }
+ result =  result * a * b
+ return result
+}
+
+let result = multiply(1,2,3,4,5)
+console.log(result)
+
+// Recursion
+function factorial(n){
+  if(n === 0) return 1
+  return n * factorial(n-1)
+}
+
+let factorialResult = factorial(5)
+console.log(factorialResult)
+
